@@ -1,0 +1,65 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
+// swift-module-flags: -target x86_64-apple-ios13.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name AnatomyOfAScrollerContentProvider
+import Foundation
+import SpriteKit
+import Swift
+public class DebugContentProvider : AnatomyOfAScrollerContentProvider.ThemeContentProviding {
+  public var size: CoreGraphics.CGSize
+  required public init(size: CoreGraphics.CGSize)
+  public func getForegroundBlock(for blockIndex: Swift.Int) -> SpriteKit.SKNode
+  public func getMidgroundBlock(for blockIndex: Swift.Int) -> SpriteKit.SKNode
+  public func getBackgroundBlock(for blockIndex: Swift.Int) -> SpriteKit.SKNode
+  public func getDistantBackgroundBlock(for blockIndex: Swift.Int) -> SpriteKit.SKNode
+  public func getAtmosphericNode() -> SpriteKit.SKNode
+  @objc deinit
+}
+public class ForestContentProvider : AnatomyOfAScrollerContentProvider.ThemeContentProviding {
+  public var size: CoreGraphics.CGSize
+  required public init(size: CoreGraphics.CGSize)
+  public func getForegroundBlock(for blockIndex: Swift.Int) -> SpriteKit.SKNode
+  public func getMidgroundBlock(for blockIndex: Swift.Int) -> SpriteKit.SKNode
+  public func getBackgroundBlock(for blockIndex: Swift.Int) -> SpriteKit.SKNode
+  public func getDistantBackgroundBlock(for blockIndex: Swift.Int) -> SpriteKit.SKNode
+  public func getAtmosphericNode() -> SpriteKit.SKNode
+  @objc deinit
+}
+public class DesertContentProvider : AnatomyOfAScrollerContentProvider.ThemeContentProviding {
+  public var size: CoreGraphics.CGSize
+  required public init(size: CoreGraphics.CGSize)
+  public func getForegroundBlock(for blockIndex: Swift.Int) -> SpriteKit.SKNode
+  public func getMidgroundBlock(for blockIndex: Swift.Int) -> SpriteKit.SKNode
+  public func getBackgroundBlock(for blockIndex: Swift.Int) -> SpriteKit.SKNode
+  public func getDistantBackgroundBlock(for blockIndex: Swift.Int) -> SpriteKit.SKNode
+  public func getAtmosphericNode() -> SpriteKit.SKNode
+  @objc deinit
+}
+public class CityContentProvider : AnatomyOfAScrollerContentProvider.ThemeContentProviding {
+  public var size: CoreGraphics.CGSize
+  required public init(size: CoreGraphics.CGSize)
+  public func getForegroundBlock(for blockIndex: Swift.Int) -> SpriteKit.SKNode
+  public func getMidgroundBlock(for blockIndex: Swift.Int) -> SpriteKit.SKNode
+  public func getBackgroundBlock(for blockIndex: Swift.Int) -> SpriteKit.SKNode
+  public func getDistantBackgroundBlock(for blockIndex: Swift.Int) -> SpriteKit.SKNode
+  public func getAtmosphericNode() -> SpriteKit.SKNode
+  @objc deinit
+}
+public class AlpsContentProvider : AnatomyOfAScrollerContentProvider.ThemeContentProviding {
+  public var size: CoreGraphics.CGSize
+  required public init(size: CoreGraphics.CGSize)
+  public func getForegroundBlock(for blockIndex: Swift.Int) -> SpriteKit.SKNode
+  public func getMidgroundBlock(for blockIndex: Swift.Int) -> SpriteKit.SKNode
+  public func getBackgroundBlock(for blockIndex: Swift.Int) -> SpriteKit.SKNode
+  public func getDistantBackgroundBlock(for blockIndex: Swift.Int) -> SpriteKit.SKNode
+  public func getAtmosphericNode() -> SpriteKit.SKNode
+  @objc deinit
+}
+public protocol ThemeContentProviding {
+  var size: CoreGraphics.CGSize { get }
+  init(size: CoreGraphics.CGSize)
+  func getForegroundBlock(for blockIndex: Swift.Int) -> SpriteKit.SKNode
+  func getMidgroundBlock(for blockIndex: Swift.Int) -> SpriteKit.SKNode
+  func getBackgroundBlock(for blockIndex: Swift.Int) -> SpriteKit.SKNode
+  func getDistantBackgroundBlock(for blockIndex: Swift.Int) -> SpriteKit.SKNode
+  func getAtmosphericNode() -> SpriteKit.SKNode
+}
